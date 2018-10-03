@@ -1,2 +1,2 @@
-# alexszeliga.github.io
-Setting up my Github page
+# Responsive-Portfolio
+Basic-Portfolio recreated with a responsive design.

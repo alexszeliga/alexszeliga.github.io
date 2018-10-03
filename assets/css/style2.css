@@ -1,0 +1,53 @@
+/* dark blue:    #05386B */
+
+/* greeny-blue:  #379683 */
+
+/* bright green: #5CDB95 */
+
+/* pale green:   #8EE4AF */
+
+/* taupe:        #EDF5E1 */
+
+body {
+  background: #5cdb95;
+}
+
+.header {
+  background: #05386b;
+}
+
+.header-pic {
+  max-width: 100%;
+  padding: 1em;
+  background: #05386b;
+  height: auto;
+}
+
+.head-shot {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer {
+  background: #05386b;
+}
+
+.header-top {
+  background-color: #05386b;
+}
+
+.header-picture {
+  background-color: #05386b;
+}
+
+.header-whitespace {
+  background-color: #5cdb95;
+}
+
+.header-bull {
+  background-color: #5cdb95;
+}
+
+.header-full {
+  background-color: #05386b;
+}
