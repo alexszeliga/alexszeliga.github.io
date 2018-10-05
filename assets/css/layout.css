@@ -45,6 +45,7 @@
         display: flex;
         flex-flow: row nowrap;
         overflow-x: scroll;
+        overflow-y: visible;
         height: auto;
     }
     .slider-philosophy {
@@ -126,7 +127,7 @@
     .slider-philosophy {
         display: flex;
         flex-flow: row nowrap;
-        overflow-x: scroll;
+        overflow-x: hidden;
         overflow-y: hidden;
         height: auto;
     }
@@ -134,7 +135,7 @@
         display: flex;
         height: auto;
         flex-flow: row nowrap;
-        overflow-x: scroll;
+        overflow: hidden;
     }
     .article-name-tile {
         display: grid;
@@ -165,7 +166,7 @@
     justify-content: space-evenly;
     left: 0;
     right: 0;
-    bottom: 0.5em;
+    bottom: 1.5em;
     z-index: 100;
 }
 
@@ -174,6 +175,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: .5em;
     z-index: 200;
+}
+
+.space {
+    display: block;
+    height: 1em;
 }
