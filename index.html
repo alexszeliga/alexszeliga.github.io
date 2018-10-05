@@ -2,123 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic" rel="stylesheet">
 </head>
 
 <body>
-    <!-- The header is styled to be the full width of the page. a div holds the conent at the correct width. A few divs hold the header elements; -->
-    <div class="header clearfix">
-        <!-- The contentHeader div bounds the width of the content in the header  -->
-        <div id="contentHeader">
-            <div id="nameSpace">
-                <h3 id="yourNameHere">Alex Szeliga</h3>
+
+    <div class="grid-container">
+        <div class="header">
+            <div class="headshot">
+                <img src="./assets/images/alex_szeliga_headshot.jpg">
             </div>
-            <!-- div is positioned absolute, not floated right, links have a hover jawn on them -->
+            <div class="titlecard">
+                <h2>Alex Szeliga</h2>
+                <h3>Web Developer</h3>
+            </div>
+
         </div>
-        <div id="navigationLinks">
-            <ul>
-                <li class="nav">
-                    <a href="index.html">About Me</a>
-                </li>
-                <li class="nav">
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <!-- nav class only adds seperator, so is not needed for last item in nav -->
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+
+        <div class="content-container">
+            <div class="section-label">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="slider-portfolio">
+                <div class="port-holder">
+                    <img class="portfolio-image" src="./assets/images/hangman.png">
+                    <div class="title-band title-font">Hangman</div>
+                    <div class="option-band text-font"><a class="btn" href="https://alexszeliga.github.io/word-guess-game/">Deployed</a><a
+                            class="btn" href="https://github.com/alexszeliga/word-guess-game">Source</a></div>
+                </div>
+                <div class="port-holder">
+                    <img class="portfolio-image" src="./assets/images/rpg-game.jpg">
+                    <div class="title-band title-font">RPG Battle Sim</div>
+                    <div class="option-band text-font"><a class="btn" href="https://alexszeliga.github.io/unit-4-game/">Deployed</a><a
+                            class="btn" href="https://github.com/alexszeliga/unit-4-game">Source</a></div>
+                </div>
+                <div class="port-holder">
+                    <img class="portfolio-image" src="./assets/images/train.jpg">
+                    <div class="title-band title-font">Train Scheduler</div>
+                    <div class="option-band text-font"><a class="btn" href="https://alexszeliga.github.io/train-schedule/">Deployed</a><a
+                            class="btn" href="#https://github.com/alexszeliga/train-schedule">Source</a></div>
+                </div>
+                <div class="port-holder">
+                    <img class="portfolio-image" src="./assets/images/trivia.jpg">
+                    <div class="title-band title-font">React.JS Trivia</div>
+                    <div class="option-band text-font"><a class="btn" href="https://alexszeliga.github.io/TriviaGame/">Deployed</a><a
+                            class="btn" href="https://github.com/alexszeliga/TriviaGame">Source</a></div>
+                </div>
+                <div class="port-holder">
+                    <img class="portfolio-image" src="./assets/images/viewpoint.png">
+                    <div class="title-band title-font">ViewPoints</div>
+                    <div class="option-band text-font"><a class="btn" href="https://alexszeliga.github.io/group-project-number-one/">Deployed</a><a
+                            class="btn" href="https://github.com/alexszeliga/group-project-number-one">Repo</a></div>
+                </div>
+            </div>
+            <div class="section-label">
+                <h2>Philosophy</h2>
+            </div>
+            <div class="slider-philosophy">
+                <a href="./about-me.html">
+                    <div class="article-name-tile">
+                        <h3 class="article-title">React! Relax.
+                        </h3>
+                        <p class="focus-text">Lessons learned in conflict and personality management.</p>
+                    </div>
+                </a>
+                <a href="./about-me.html">
+                    <div class="article-name-tile mid">
+                        <h3 class="article-title">About Me<p class="focus-text"></p>
+                        </h3>
+                        <p class="focus-text">How did I get here? This is not my
+                            beautiful house.</p>
+                    </div>
+
+                </a>
+                <a href="./about-me.html">
+                    <div class="article-name-tile">
+                        <h3 class="article-title">Well Led
+                        </h3>
+                        <p class="focus-text">Who am I to say 'hold the onions, please'?</p>
+                    </div>
+                </a>
+            </div>
+            <div class="section-label">
+                <h2>Reach out!</h2>
+            </div>
+            <div class="slider-contact">
+                <a href="https://www.linkedin.com/in/alex-szeliga-1ab93423/" target="_blank"><img class="contact-image"
+                        src="./assets/images/500px-Linkedin.svg.png"></a>
+                <a href="https://github.com/alexszeliga/" target="_blank"><img class="contact-image mid2" src="./assets/images/GitHub-Mark.png"></a>
+                <a href="mailto:alexszeliga@gmail.com" target="_blank"><img class="contact-image" src="./assets/images/email.png"></a>
+            </div>
+
         </div>
     </div>
-    <!-- the context here might be a little backwards; there's a content area section, because semantically sections come before divs, but I think 
-    I might have been better off making a div for the content area, then split that up into sections-->
-    <section class="contentBox">
-    <section id="contentArea">
-        <h3 class="contentHeading">About Me</h3>
-        <div id="contentContent">
-            <div class="imageBox">
-                <img src="assets/images/alex_szeliga_headshot.jpg" width=200 class="textwrap" alt="Headshot of Alex Szeliga">
-            </div>
-            <p>
-                By the time I completed high school, I felt very confident that the most exciting (and likely most lucrative) careers available
-                to my cohort were in technology and computer science. Upon graduating, I had convinced myself that traditional
-                college was out of my reach. I started a long slog through a number of jobs and community colleges trying
-                to find something I could make my life’s work. Personally, I felt that writing code was as close to an exercise
-                in creativity that one in the field of computer science could reliably be paid for, but I lacked the savvy
-                to understand how to apply my talents.
-            </p>
-            <p>
-                Flashback to my middle school years; when I was first set loose on the early Internet. Largely unsupervised, I did what any
-                13 year old boy would do: I found an AOL chatroom full of nerdy teenagers who wrote add-on software. Most
-                of the software was largely benign. Useful in kicking other users out of chat rooms and disconnecting them
-                from the internet by overloading their hardware, but little else. It was an exercise in angst; after finding
-                a local friend with similar interests, I made my own add-on software using a dubious version of Visual Basic
-                3.0 and began to use and distribute it in the community.
-            </p>
-            <p>
-                As excited as tech professionals are supposed to be about the early Internet, the reality is that it was pretty boring. It
-                was slow, there wasn’t much useful information, and if your mom needed the phone you had to sign off. This
-                was an important confluence for me. My computer was a hand-me-down. In the era of Windows 98 SE, I was running
-                Windows 3.11, so gaming on my computer was still largely done in DOS. While poking around in DOS, I discovered
-                QBASIC.
-            </p>
-            <p>
-                My functional knowledge of Visual Basic all of a sudden began to frame a new understanding. I printed out and referenced
-                QBASIC documentation and was able to make my computer do incredible things by copying source code out of
-                magazines. The Summer that I learned QBASIC was the spark that informed my realization at the end of high
-                school.
-            </p>
-            <p>
-                The circumstances of the time which led me away from the lucrative and exciting path of a developer seem so insignificant
-                now. While my attempts at higher education and my early career in retail led me askew, the financial crash
-                of 2008 finally dialed in my focus.
-            </p>
-            <p>
-                I knew I needed to be in tech, but lacked the skills to do so. I opted to leverage my retail skills and take a lateral jump
-                into eCommerce. When I was hired by RevZilla.com, there were fewer than twenty employees. RevZilla was more
-                than a blessing, it was the business education I never knew I wanted. I knew that building things was what
-                I wanted to do, and RevZilla’s number one goal was to grow quickly but not as a means to attract investment.
-                RevZilla was a true experiment by the founding partners to build something that would not only dominate,
-                but also stand the test of time.
-            </p>
-            <p>
-                I started in fulfillment operations as the receiving manager. I built procedures and documentation along side of a revolving
-                cast of fulfillment center managers who were alternately fired for cause or poached to loftier positions
-                at larger companies. Eventually, the directors at RevZilla noticed me as a point of consistency and helped
-                me find my next challenge which was to help build a team around our order processing procedures.
-            </p>
-            <p>
-                I built a team from scratch using largely unknown talent from within RevZilla’s own fulfillment team. The team was responsible
-                for advocating for customers and their orders. The team interacted with every operations team at RevZilla.
-                I developed procedures and communication structure between my team and customer service, purchasing, fulfillment,
-                and most relevant to my interests, our in house software development team. In addition to the site itself,
-                RevZilla.com also builds almost all admin and SCM software in house. My role was to interpret the needs of
-                our business-unit users and provide relevant feedback to ensure the tools created were up to the task of
-                managing my team’s day-to-day operations and to scale into the future.
-            </p>
-            <p>
-                While I recognize now that I’ve skewed away from what should have been an obvious path, I’m ready to correct course. And
-                I’m not even mad; I learned so much in my early career. Many of those experiences further clarified my focus,
-                which is why I’ve decided to enroll in the Penn LPS Coding Bootcamp. I am ready to make an acute pivot in
-                my career, but take with me the useful skills I’ve already developed. I’ve already been through the start-up
-                ‘bootcamp’, and now I’m poised to add some new tools to my kit and build the next big idea.
-            </p>
-        </div>
-    </section>
-    </section>
-    <!-- just putting a (c) on a document doesn't exactly mean much, but I firmly believe in creative commons -->
-    <footer>
-        <div id="license">
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-            </a>
-            <br />This work is licensed under a
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-        </div>
-    </footer>
 </body>
 
 </html>
