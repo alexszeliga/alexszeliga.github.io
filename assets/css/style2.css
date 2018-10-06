@@ -149,6 +149,9 @@ a {
         height: 20vw;
         width: 20vw;
     }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .btn {
