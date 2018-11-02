@@ -1,187 +1,193 @@
 @media only screen and (max-width: 600px) {
-    .grid-container {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1em;
-        max-width: 960px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto 8fr 2fr;
-        z-index: 0;
-        /* overflow: hidden; */
-    }
-    .header {
-        grid-area: 1 / 1 / span 1 / end;
-        /* z-index: 1; */
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        z-index: 10;
-        margin: 0.25em 0.25em 0px 0.25em;
-    }
-    .headshot img {
-        vertical-align: bottom;
-        width: 100%;
-        max-width: 275px;
-    }
-    .titlecard {
-        grid-area: 1 / 6 / 2 / span 7;
-    }
-    .content-container {
-        padding: 0px 0.5em;
-        display: flex;
-        grid-area: 2 / 1 / end / end;
-        flex-flow: row wrap;
-        z-index: 1;
-        overflow-x: scroll;
-        justify-content: center;
-    }
-    .slider-portfolio {
-        display: flex;
-        flex-flow: row nowrap;
-        overflow-x: scroll;
-        overflow-y: visible;
-        height: auto;
-    }
-    .slider-philosophy {
-        display: flex;
-        flex-flow: row nowrap;
-        overflow-x: visible;
-        overflow-y: visible;
-        height: auto;
-    }
-    .slider-contact {
-        display: flex;
-        height: auto;
-        flex-flow: row nowrap;
-        overflow-x: visible;
-        overflow-y: scroll;
-    }
-    .article-name-tile {
-        display: grid;
-        height: 18vw;
-        width: 20vw;
-        align-content: center;
-        text-align: center;
-        cursor: pointer;
-    }
-    .mid {
-        margin: 0px 0.5em;
-    }
-    .mid2 {
-        margin: 0px 2em;
-    }
+  .grid-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 8fr 2fr;
+    z-index: 0;
+    /* overflow: hidden; */
+  }
+  .header {
+    grid-area: 1 / 1 / span 1 / end;
+    /* z-index: 1; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    z-index: 10;
+    margin: 0.25em 0.25em 0px 0.25em;
+  }
+  .headshot img {
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 275px;
+  }
+  .titlecard {
+    grid-area: 1 / 6 / 2 / span 7;
+  }
+  .content-container {
+    padding: 0px 0.5em;
+    display: flex;
+    grid-area: 2 / 1 / end / end;
+    flex-flow: row wrap;
+    z-index: 1;
+    overflow-x: scroll;
+    justify-content: center;
+  }
+  .slider-portfolio {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    overflow-y: visible;
+    height: auto;
+  }
+  .slider-philosophy {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: visible;
+    overflow-y: visible;
+    height: auto;
+  }
+  .slider-contact {
+    display: flex;
+    height: auto;
+    flex-flow: row nowrap;
+    overflow-x: visible;
+    overflow-y: scroll;
+  }
+  .article-name-tile {
+    display: grid;
+    height: 18vw;
+    width: 20vw;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  .mid {
+    margin: 0px 0.5em;
+  }
+  .mid2 {
+    margin: 0px 2em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .grid-container {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1em;
-        max-width: 960px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto 8fr 2fr;
-        z-index: 0;
-    }
-    .header {
-        grid-area: 1 / 1 / span 1 / end;
-        /* z-index: 1; */
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        z-index: 10;
-        margin: 0px 0.25em;
-    }
-    .headshot img {
-        vertical-align: bottom;
-        width: 100%;
-        max-width: 275px;
-    }
-    .titlecard {
-        grid-area: 1 / 6 / 2 / span 7;
-    }
-    .content-container {
-        padding: 0px 0.5em;
-        display: flex;
-        grid-area: 2 / 1 / end / end;
-        flex-flow: row wrap;
-        z-index: 1;
-        justify-content: center;
-    }
-    .slider-portfolio {
-        display: flex;
-        flex-flow: row nowrap;
-        overflow-x: scroll;
-        height: auto;
-    }
-    .slider-philosophy {
-        display: flex;
-        flex-flow: row nowrap;
-        overflow-x: visible;
-        overflow-y: visible;
-        height: auto;
-    }
-    .slider-contact {
-        display: flex;
-        height: auto;
-        flex-flow: row nowrap;
-        overflow: hidden;
-    }
-    .article-name-tile {
-        display: grid;
-        height: 18vw;
-        width: 20vw;
-        align-content: center;
-        text-align: center;
-        cursor: pointer;
-    }
-    .mid {
-        margin: 0px 1em;
-    }
-    .mid2 {
-        margin: 0px 2em;
-    }
+  .grid-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 8fr 2fr;
+    z-index: 0;
+  }
+  .header {
+    grid-area: 1 / 1 / span 1 / end;
+    /* z-index: 1; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    z-index: 10;
+    margin: 0px 0.25em;
+  }
+  .headshot img {
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 275px;
+  }
+  .titlecard {
+    grid-area: 1 / 6 / 2 / span 7;
+  }
+  .content-container {
+    padding: 0px 0.5em;
+    display: flex;
+    grid-area: 2 / 1 / end / end;
+    flex-flow: row wrap;
+    z-index: 1;
+    justify-content: center;
+    overflow-x: visible;
+    overflow-y: scroll;
+  }
+  .content-container::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  .slider-portfolio {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    height: auto;
+  }
+  .slider-philosophy {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: visible;
+    overflow-y: visible;
+    height: auto;
+  }
+  .slider-contact {
+    display: flex;
+    height: auto;
+    flex-flow: row nowrap;
+    overflow: hidden;
+  }
+  .article-name-tile {
+    display: grid;
+    height: 18vw;
+    width: 20vw;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  .mid {
+    margin: 0px 1em;
+  }
+  .mid2 {
+    margin: 0px 2em;
+  }
 }
 
 .port-holder {
-    position: relative;
-    margin-right: 1em;
-    margin-bottom: 0.5em;
+  position: relative;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
 }
 
 .option-band {
-    text-align: center;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    left: 0;
-    right: 0;
-    bottom: 1.5em;
-    z-index: 100;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  left: 0;
+  right: 0;
+  bottom: 1.5em;
+  z-index: 100;
 }
 
 .title-band {
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.5em;
-    z-index: 200;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5em;
+  z-index: 200;
 }
 
 .space {
-    display: block;
-    height: 1em;
+  display: block;
+  height: 1em;
 }
