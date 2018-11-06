@@ -72,34 +72,15 @@ body {
     font-family: "Eczar", serif;
 }
 
-.slider-philosophy h3 {
-    text-align: center;
-    font-size: 8vw;
-    font-family: "Eczar", serif;
-    color: #edf5e1;
-    cursor: pointer;
-}
-
 .focus-text {
     display: none;
-    font-size: 3vw;
+    font-size: 1rem;
     font-family: "Gentium Basic", serif;
 }
 
 .article-name-tile {
+    width: 30%;
     padding: 0.5em;
-}
-
-.slider-philosophy .article-name-tile:hover {
-    color: #05386b;
-}
-
-.slider-philosophy .article-name-tile:hover .focus-text {
-    display: block;
-}
-
-.slider-philosophy .article-name-tile:hover .article-title {
-    display: none;
 }
 
 .mb {
@@ -131,19 +112,6 @@ a {
 
 @media only screen and (max-width: 600px) {
     /* stuff that only happens when mobile */
-    .slider-philosophy .article-name-tile:hover .focus-text {
-        display: none;
-    }
-    .slider-philosophy .article-name-tile {
-        border: 1px solid #05386b;
-        border-radius: 1em;
-    }
-    .slider-philosophy .article-name-tile:hover .article-title {
-        display: block;
-    }
-    .slider-philosophy h3 {
-        font-size: 1.7em;
-    }
     .contact-image {
         flex: 1 1 100px;
         height: 20vw;
@@ -201,4 +169,39 @@ a {
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
+}
+
+.slider-philosophy {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.phil-article-title {
+    margin: auto;
+    font-size: 3rem;
+    color: #edf5e1;
+}
+
+.phil-article-hover-text {
+    display: none;
+    margin: auto;
+    font-size: 2rem;
+    color: #05386b;
+}
+
+.phil-article {
+    width: 33%;
+    display: block;
+    cursor: pointer;
+}
+
+.phil-article:hover .phil-article-hover-text {
+    display: inline;
+}
+
+.phil-article:hover .phil-article-title {
+    display: none;
 }
